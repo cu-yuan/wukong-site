@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>众生 · 黑神话：悟空</title>
+<meta name="description" content="天命人、猪八戒、齐天大圣与群妖故人：《黑神话：悟空》十二位角色的速写与小传。">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="黑神话：悟空 · 返回首页">
+    <span class="seal brand-seal" aria-hidden="true">悟</span>
+    <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="主导航">
+    <a href="index.html">首页</a>
+    <a href="world.html">六回</a>
+    <a href="characters.html" aria-current="page">众生</a>
+    <a href="combat.html">棍法</a>
+    <a href="bestiary.html">影神图</a>
+    <a href="culture.html">考据</a>
+    <a href="about.html">关于</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><i aria-hidden="true"></i></button>
+</header>
+
+<main id="main">
+
+  <section class="page-hero page-hero--people" data-mark="人">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">首页</a><i aria-hidden="true">/</i><span>众生</span></nav>
+      <h1>众生</h1>
+      <p class="lead">神佛、妖怪、旧友与路人。西游路上没有纯粹的反派，只有放不下的人。这里记下十二位，按同行、大圣、群妖、故人四类归档。</p>
+      <div class="page-hero__meta">
+        <span>收录<b>十二位</b></span>
+        <span>分类<b>同行 / 大圣 / 群妖 / 故人</b></span>
+        <span>体例<b>小传 + 一句按语</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="peopleTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">All Beings · 众生</p>
+          <h2 class="reveal" id="peopleTitle" style="--d:60ms">谁不是一边赶路，<br>一边回头</h2>
+        </div>
+        <div class="section-head__aside reveal" style="--d:120ms">
+          点选下方分类可以筛选人物；每位人物只留一段小传，长故事在「影神图」与「六回」里。
+          <span class="count">12 FIGURES / 4 GROUPS</span>
+        </div>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="chip is-active" type="button" data-people-filter="all" aria-pressed="true">全部</button>
+        <button class="chip" type="button" data-people-filter="同行" aria-pressed="false">同行</button>
+        <button class="chip" type="button" data-people-filter="大圣" aria-pressed="false">大圣</button>
+        <button class="chip" type="button" data-people-filter="群妖" aria-pressed="false">群妖</button>
+        <button class="chip" type="button" data-people-filter="故人" aria-pressed="false">故人</button>
+        <span class="filter-count" id="peopleCount">共 12 位 · 当前 12</span>
+      </div>
+
+      <div class="people-grid" id="peopleGrid">
+
+        <article class="person reveal" data-cat="同行">
+          <span class="sigil" aria-hidden="true">命</span>
+          <div class="person-info">
+            <p class="person-alias">花果山的一只小猴 · The Destined One</p>
+            <h3>天命人</h3>
+            <p class="person-bio">从花果山醒来，带着一根旧棍和一身说不清的熟悉感。他要寻回大圣的六根，却总在别人的故事里看见自己。</p>
+            <span class="person-tag">主角</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="同行" style="--d:60ms">
+          <span class="sigil" aria-hidden="true">戒</span>
+          <div class="person-info">
+            <p class="person-alias">天蓬元帅 · 净坛使者</p>
+            <h3>猪八戒</h3>
+            <p class="person-bio">嘴碎、贪吃、爱吹牛，可真到要紧处，九齿钉耙从不含糊。他陪天命人走这一路，像在替自己还一笔旧账。</p>
+            <span class="person-tag">同行者</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="大圣" style="--d:120ms">
+          <span class="sigil" aria-hidden="true">圣</span>
+          <div class="person-info">
+            <p class="person-alias">美猴王 · 斗战胜佛</p>
+            <h3>齐天大圣</h3>
+            <p class="person-bio">曾大闹天宫，也曾护送唐僧西行。取经之后，他的六根被分藏六处，身死而意不灭——那是天命人最后要面对的东西。</p>
+            <span class="person-tag">大圣</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖">
+          <span class="sigil" aria-hidden="true">熊</span>
+          <div class="person-info">
+            <p class="person-alias">黑风山旧主</p>
+            <h3>黑熊精</h3>
+            <p class="person-bio">守着观音禅院，也守着一炉偷来的香火。他想要体面，却总用最不体面的方式去拿。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖" style="--d:60ms">
+          <span class="sigil" aria-hidden="true">风</span>
+          <div class="person-info">
+            <p class="person-alias">黄风岭的鼠妖</p>
+            <h3>黄风大圣</h3>
+            <p class="person-bio">一口三昧神风，吹得天地昏暗。他躲在风里，不是因为有恃无恐，而是因为不敢让人看清自己。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖" style="--d:120ms">
+          <span class="sigil" aria-hidden="true">眉</span>
+          <div class="person-info">
+            <p class="person-alias">小西天「弥勒」</p>
+            <h3>黄眉</h3>
+            <p class="person-bio">自立为佛，讲经也讲歪理。人种袋收尽众生，金铙困住行者；他信的到底是佛，还是自己编出来的那套道理。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖">
+          <span class="sigil" aria-hidden="true">眼</span>
+          <div class="person-info">
+            <p class="person-alias">盘丝岭蜈蚣精</p>
+            <h3>百眼魔君</h3>
+            <p class="person-bio">满身金眼，金光罩体，照得人无处可藏。他等一个能破金光的人，等了很多年。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖" style="--d:60ms">
+          <span class="sigil" aria-hidden="true">火</span>
+          <div class="person-info">
+            <p class="person-alias">圣婴大王</p>
+            <h3>红孩儿</h3>
+            <p class="person-bio">火焰山里长大的孩子，三昧真火随身。他恨父亲，也恨自己生来就是妖；火是他唯一的语言。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖" style="--d:120ms">
+          <span class="sigil" aria-hidden="true">牛</span>
+          <div class="person-info">
+            <p class="person-alias">平天大圣</p>
+            <h3>牛魔王</h3>
+            <p class="person-bio">火焰山之主，铁扇公主的丈夫，红孩儿的父亲。一身的力，也一身的累，最后被自己的家事困住。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="群妖">
+          <span class="sigil" aria-hidden="true">扇</span>
+          <div class="person-info">
+            <p class="person-alias">翠云山芭蕉洞主</p>
+            <h3>铁扇公主</h3>
+            <p class="person-bio">一柄芭蕉扇熄得火焰山，却熄不了心里的火。她护着孩子，也护着一句不肯低头的硬气。</p>
+            <span class="person-tag">妖王</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="故人" style="--d:60ms">
+          <span class="sigil" aria-hidden="true">郎</span>
+          <div class="person-info">
+            <p class="person-alias">灌江口显圣真君</p>
+            <h3>二郎神</h3>
+            <p class="person-bio">与悟空斗过法，也识得他的本事。这一回他守的是天庭的秩序，还是自己那一点不肯认输的执念。</p>
+            <span class="person-tag">故人</span>
+          </div>
+        </article>
+
+        <article class="person reveal" data-cat="故人" style="--d:120ms">
+          <span class="sigil" aria-hidden="true">菩</span>
+          <div class="person-info">
+            <p class="person-alias">灵台方寸山 · 斜月三星洞</p>
+            <h3>菩提祖师</h3>
+            <p class="person-bio">教出悟空七十二变，也看着他一步步走远。他从不出手，却什么都知道。</p>
+            <span class="person-tag">故人</span>
+          </div>
+        </article>
+
+        <p class="people-empty" id="peopleEmpty" hidden>这一类暂无人物，换一个分类看看。</p>
+      </div>
+
+      <p class="muted reveal" style="margin-top:30px;font-size:.78rem;line-height:1.9">小传依据游戏内文本与《西游记》原著作了再叙述，并非官方设定；人名、别号以通行译法为准。</p>
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-labelledby="stillsTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">— OFFICIAL STILLS · 剧照</p>
+          <h2 class="display reveal" id="stillsTitle" style="--d:80ms">游戏里的这张脸</h2>
+        </div>
+        <div class="section-head__aside">
+          <p class="muted reveal" style="--d:160ms">官方游戏截图，用于课程作业的图文展示；角色、场景与画面版权归游戏科学（Game Science）所有。</p>
+        </div>
+      </div>
+
+      <figure class="still-banner reveal" style="--d:220ms">
+        <img src="assets/still-duel.jpg" width="1600" height="900" alt="《黑神话：悟空》官方截图：林间空地，天命人持棍与妖怪对峙">
+        <figcaption>林间对峙 · 官方剧照</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <h2 class="reveal" id="ctaTitle">人影看罢，<em>去看妖影</em></h2>
+      <a class="btn btn--gold reveal" href="bestiary.html" style="--d:100ms">翻开影神图</a>
+    </div>
+    <span class="cta-seal" aria-hidden="true"><span class="seal seal--lg">众</span></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="seal" aria-hidden="true">悟</span>
+        <div>
+          <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+          <p class="footer-desc">一处关于《黑神话：悟空》的课程设计站点：六回山水、众生影神、棍法与考据。场景照片取自 Wikimedia Commons，官方剧照来自 Steam 商店页，版式与代码为本人所写。</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <a href="index.html">首页</a>
+        <a href="world.html">六回</a>
+        <a href="characters.html">众生</a>
+        <a href="combat.html">棍法</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <a href="bestiary.html">影神图</a>
+        <a href="culture.html">考据</a>
+        <a href="about.html">关于本站</a>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <p class="footer-note">本站为非官方学习作品，与游戏科学无关。游戏名称、角色与世界观版权归原权利方所有；照片版权归各摄影师，版式、代码与文字为本人原创。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 网页设计课程作业 · 黑神话：悟空</span>
+      <span>HTML · CSS · JavaScript 手写 / 无框架</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

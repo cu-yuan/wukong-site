@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>棍法 · 黑神话：悟空</title>
+<meta name="description" content="三种棍势、六道法术、变化与精魄：《黑神话：悟空》战斗系统拆解与五条心法。">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="黑神话：悟空 · 返回首页">
+    <span class="seal brand-seal" aria-hidden="true">悟</span>
+    <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="主导航">
+    <a href="index.html">首页</a>
+    <a href="world.html">六回</a>
+    <a href="characters.html">众生</a>
+    <a href="combat.html" aria-current="page">棍法</a>
+    <a href="bestiary.html">影神图</a>
+    <a href="culture.html">考据</a>
+    <a href="about.html">关于</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><i aria-hidden="true"></i></button>
+</header>
+
+<main id="main">
+
+  <section class="page-hero page-hero--combat" data-mark="棍">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">首页</a><i aria-hidden="true">/</i><span>棍法</span></nav>
+      <h1>棍法</h1>
+      <p class="lead">一根棍，三种握法，六道法术。它看着简单，真打起来却像写字：起笔、行笔、收笔，差半寸就散了。</p>
+      <div class="page-hero__meta">
+        <span>棍势<b>劈 / 立 / 戳</b></span>
+        <span>法术<b>六道主动</b></span>
+        <span>心法<b>五条</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="棍势与法术">
+
+    <!-- 棍势 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>三重棍势</h2>
+        <span>THREE STANCES · 劈 / 立 / 戳</span>
+      </div>
+
+      <div class="stance-tabs reveal" role="tablist" aria-label="棍势选择">
+        <button class="stance-tab is-active" type="button" role="tab" id="tab-pi" aria-controls="panel-pi" aria-selected="true">劈棍</button>
+        <button class="stance-tab" type="button" role="tab" id="tab-li" aria-controls="panel-li" aria-selected="false">立棍</button>
+        <button class="stance-tab" type="button" role="tab" id="tab-chuo" aria-controls="panel-chuo" aria-selected="false">戳棍</button>
+      </div>
+
+      <div class="stance-panel is-active" id="panel-pi" role="tabpanel" aria-labelledby="tab-pi">
+        <div class="stance-figure" aria-hidden="true"><b>劈</b></div>
+        <div class="stance-body">
+          <h3>劈棍</h3>
+          <span class="en">Smash Stance</span>
+          <p>高举重落，一击定音。劈棍的蓄力段最长，也最容易被读；真正好用的不是满蓄，而是对方出招之后那半拍的空门。</p>
+          <div class="meters">
+            <div class="meter"><span>伤害</span><span class="track"><i style="--v:.92"></i></span><em>高</em></div>
+            <div class="meter"><span>范围</span><span class="track"><i style="--v:.55"></i></span><em>中</em></div>
+            <div class="meter"><span>蓄力</span><span class="track"><i style="--v:.78"></i></span><em>长</em></div>
+            <div class="meter"><span>破防</span><span class="track"><i style="--v:.82"></i></span><em>强</em></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stance-panel" id="panel-li" role="tabpanel" aria-labelledby="tab-li">
+        <div class="stance-figure" aria-hidden="true"><b>立</b></div>
+        <div class="stance-body">
+          <h3>立棍</h3>
+          <span class="en">Pillar Stance</span>
+          <p>撑棍而立，扫开一圈。立棍攻守兼备，被围住时最好用；代价是棍势攒得慢，别指望它一套带走。</p>
+          <div class="meters">
+            <div class="meter"><span>伤害</span><span class="track"><i style="--v:.62"></i></span><em>中</em></div>
+            <div class="meter"><span>范围</span><span class="track"><i style="--v:.92"></i></span><em>广</em></div>
+            <div class="meter"><span>蓄力</span><span class="track"><i style="--v:.84"></i></span><em>长</em></div>
+            <div class="meter"><span>破防</span><span class="track"><i style="--v:.48"></i></span><em>弱</em></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stance-panel" id="panel-chuo" role="tabpanel" aria-labelledby="tab-chuo">
+        <div class="stance-figure" aria-hidden="true"><b>戳</b></div>
+        <div class="stance-body">
+          <h3>戳棍</h3>
+          <span class="en">Thrust Stance</span>
+          <p>直取一点，破防最强。戳棍前摇短、距离长，适合打断与追击；但打空之后的后摇，足够对方还你一刀。</p>
+          <div class="meters">
+            <div class="meter"><span>伤害</span><span class="track"><i style="--v:.78"></i></span><em>较高</em></div>
+            <div class="meter"><span>范围</span><span class="track"><i style="--v:.35"></i></span><em>窄</em></div>
+            <div class="meter"><span>蓄力</span><span class="track"><i style="--v:.52"></i></span><em>短</em></div>
+            <div class="meter"><span>破防</span><span class="track"><i style="--v:.95"></i></span><em>极强</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 法术 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>六道法术</h2>
+        <span>SPELLS · 消耗法力 / 各有冷却</span>
+      </div>
+
+      <div class="spell-grid">
+        <article class="spell reveal">
+          <div class="spell-head"><b aria-hidden="true">定</b><h3>定身术</h3></div>
+          <p>定住眼前之敌，为自己争一息。对霸体与大型妖王效果有限，别把它当成万能暂停键。</p>
+          <span class="key">战术 · 控场</span>
+        </article>
+        <article class="spell reveal" style="--d:50ms">
+          <div class="spell-head"><b aria-hidden="true">散</b><h3>聚形散气</h3></div>
+          <p>化烟而走，留下一个假身。用来脱困、绕背、躲大招，是这套战斗里最像「猴」的一招。</p>
+          <span class="key">身法 · 脱战</span>
+        </article>
+        <article class="spell reveal" style="--d:100ms">
+          <div class="spell-head"><b aria-hidden="true">身</b><h3>身外身法</h3></div>
+          <p>拔一把毫毛，吹出几个分身替你打。人越多越好用，尤其适合清场与打断。</p>
+          <span class="key">输出 · 群战</span>
+        </article>
+        <article class="spell reveal">
+          <div class="spell-head"><b aria-hidden="true">安</b><h3>安身法</h3></div>
+          <p>画地为圈，圈内回血、圈外难入。守点、读招、喘口气，都靠它。</p>
+          <span class="key">生存 · 阵地</span>
+        </article>
+        <article class="spell reveal" style="--d:50ms">
+          <div class="spell-head"><b aria-hidden="true">铜</b><h3>铜头铁臂</h3></div>
+          <p>短时间硬如金石，能扛下重击。它不是无敌，别拿来赌命。</p>
+          <span class="key">防御 · 硬扛</span>
+        </article>
+        <article class="spell reveal" style="--d:100ms">
+          <div class="spell-head"><b aria-hidden="true">毛</b><h3>救命毫毛</h3></div>
+          <p>倒下时留一线生机，是最后的保险。用掉之前，你不会知道它有多贵。</p>
+          <span class="key">被动 · 复活</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- 变化与精魄 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>变化、精魄与分身</h2>
+        <span>TRANSFORMATION · 借来的本事</span>
+      </div>
+
+      <div class="transform-list">
+        <div class="transform reveal">
+          <b>狼</b>
+          <h3>广智 · 变化</h3>
+          <p>借狼妖之身，快、狠、带火。变化不是换皮，是换一套出招逻辑。</p>
+        </div>
+        <div class="transform reveal">
+          <b>魄</b>
+          <h3>精魄 · 一次杀招</h3>
+          <p>收妖之精魄，化为一次性的杀招。用对了是处决，用错了是空大。</p>
+        </div>
+        <div class="transform reveal">
+          <b>毛</b>
+          <h3>毫毛 · 分身</h3>
+          <p>身外身法召出的分身会替你吸引仇恨，也能补上最后一点伤害。</p>
+        </div>
+        <div class="transform reveal">
+          <b>根</b>
+          <h3>根器 · 永久成长</h3>
+          <p>六根归位，棍势与法术的上限才真正打开。急不来，一回一根。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 配装 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>四件随身之物</h2>
+        <span>LOADOUT · 葫芦 / 披挂 / 根器 / 法宝</span>
+      </div>
+      <div class="build-grid">
+        <article class="build reveal">
+          <span>01 · 回复</span>
+          <h3>葫芦与酒</h3>
+          <p>葫芦是命，泡酒物是命里的甜头。先升级次数，再考虑回复量。</p>
+        </article>
+        <article class="build reveal" style="--d:50ms">
+          <span>02 · 防御</span>
+          <h3>披挂与珍玩</h3>
+          <p>套装给的是容错，珍玩给的是偏科。开荒先保命，熟练后再堆伤害。</p>
+        </article>
+        <article class="build reveal" style="--d:100ms">
+          <span>03 · 成长</span>
+          <h3>根器与灵光</h3>
+          <p>灵光点有限，先点常用棍势与核心法术，别做「样样通、样样松」。</p>
+        </article>
+        <article class="build reveal" style="--d:150ms">
+          <span>04 · 战术</span>
+          <h3>法宝与精魄</h3>
+          <p>法宝决定一场战斗的开局，精魄决定收尾。按敌人换，不要一套穿到底。</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- 心法 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>五条心法</h2>
+        <span>FIVE NOTES · 写给总是贪刀的人</span>
+      </div>
+      <div class="tips">
+        <div class="tip reveal">
+          <h3>先学会不打</h3>
+          <p>看招比出招重要。多数倒地不是因为不会连段，是因为不肯松开攻击键。</p>
+        </div>
+        <div class="tip reveal">
+          <h3>识破要趁早</h3>
+          <p>识破的窗口比想象中短。与其背帧数，不如记住每个敌人抬手前的那一下停顿。</p>
+        </div>
+        <div class="tip reveal">
+          <h3>定身不是开场技</h3>
+          <p>开局就定，等于把一次免费输出换成一次普通硬直。留到对方要放大招、或你要收尾的时候。</p>
+        </div>
+        <div class="tip reveal">
+          <h3>用地形，别只用地板</h3>
+          <p>高低差会改变棍势的命中；窄处利于立棍解围，宽处才适合劈棍蓄满。</p>
+        </div>
+        <div class="tip reveal">
+          <h3>打不过就换一套</h3>
+          <p>这个游戏没有唯一的解法。换法宝、换精魄、换棍势，比在原地硬磕十次更省时间。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 节奏 -->
+    <div class="wrap combat-block">
+      <div class="block-head reveal">
+        <h2>一套完整的节奏</h2>
+        <span>FLOW · 轻棍起手，法术收尾</span>
+      </div>
+      <div class="flow reveal">
+        <div class="flow-step"><b>01</b><span>轻棍起手</span></div>
+        <div class="flow-step"><b>02</b><span>连段压血</span></div>
+        <div class="flow-step"><b>03</b><span>重棍收势</span></div>
+        <div class="flow-step"><b>04</b><span>闪身看招</span></div>
+        <div class="flow-step"><b>05</b><span>定身收尾</span></div>
+      </div>
+      <p class="muted reveal" style="margin-top:22px;font-size:.78rem;line-height:1.9">以上拆解基于游戏实际战斗系统与个人体验整理，四维数值为示意条，不代表官方数据。</p>
+    </div>
+
+  </section>
+
+  <section class="section section--tight" aria-labelledby="stillsTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">— OFFICIAL STILLS · 剧照</p>
+          <h2 class="display reveal" id="stillsTitle" style="--d:80ms">一棍扫过去</h2>
+        </div>
+        <div class="section-head__aside">
+          <p class="muted reveal" style="--d:160ms">官方游戏截图：棍势起落、金石相击。画面版权归游戏科学（Game Science）所有。</p>
+        </div>
+      </div>
+
+      <div class="stills stills--two">
+        <figure class="still reveal" style="--d:200ms">
+          <img src="assets/still-staff.jpg" width="1600" height="900" alt="官方截图：天命人挥棍横扫，金色棍光划出巨大弧线">
+          <figcaption>横扫 · 棍光</figcaption>
+        </figure>
+        <figure class="still reveal" style="--d:280ms">
+          <img src="assets/still-tree.jpg" width="1600" height="900" alt="官方截图：金叶古树之前，天命人与妖怪近身交手">
+          <figcaption>金树 · 交战</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <h2 class="reveal" id="ctaTitle">纸上谈棍，<em>不如先认一认对手</em></h2>
+      <a class="btn btn--gold reveal" href="bestiary.html" style="--d:100ms">查阅影神图</a>
+    </div>
+    <span class="cta-seal" aria-hidden="true"><span class="seal seal--lg">武</span></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="seal" aria-hidden="true">悟</span>
+        <div>
+          <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+          <p class="footer-desc">一处关于《黑神话：悟空》的课程设计站点：六回山水、众生影神、棍法与考据。场景照片取自 Wikimedia Commons，官方剧照来自 Steam 商店页，版式与代码为本人所写。</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <a href="index.html">首页</a>
+        <a href="world.html">六回</a>
+        <a href="characters.html">众生</a>
+        <a href="combat.html">棍法</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <a href="bestiary.html">影神图</a>
+        <a href="culture.html">考据</a>
+        <a href="about.html">关于本站</a>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <p class="footer-note">本站为非官方学习作品，与游戏科学无关。游戏名称、角色与世界观版权归原权利方所有；照片版权归各摄影师，版式、代码与文字为本人原创。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 网页设计课程作业 · 黑神话：悟空</span>
+      <span>HTML · CSS · JavaScript 手写 / 无框架</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

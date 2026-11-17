@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黑神话：悟空 · 六回山水，一根断棍</title>
+<meta name="description" content="《黑神话：悟空》主题课程设计站点：六回山水、众生影神、棍法拆解与西游文化考据。场景照片取自 Wikimedia Commons 开放授权作品。">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="黑神话：悟空 · 返回首页">
+    <span class="seal brand-seal" aria-hidden="true">悟</span>
+    <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="主导航">
+    <a href="index.html" aria-current="page">首页</a>
+    <a href="world.html">六回</a>
+    <a href="characters.html">众生</a>
+    <a href="combat.html">棍法</a>
+    <a href="bestiary.html">影神图</a>
+    <a href="culture.html">考据</a>
+    <a href="about.html">关于</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><i aria-hidden="true"></i></button>
+</header>
+
+<main id="main">
+
+  <!-- ================= 首屏 ================= -->
+  <section class="hero">
+    <div class="hero-art" aria-hidden="true">
+      <img class="hero-sky" src="assets/still-hero.jpg" width="2000" height="857" alt="">
+      <div class="hero-veil"></div>
+      <div class="hero-halo"></div>
+      <div class="hero-ring"></div>
+      <canvas id="embers"></canvas>
+    </div>
+
+    <div class="hero-inner">
+      <p class="hero-eyebrow"><span></span>Six Chapters · One Destiny<span></span></p>
+      <h1 class="hero-title">
+        <span class="line line--small">黑神话</span>
+        <span class="line line--big">悟空</span>
+      </h1>
+      <span class="hero-seal" aria-hidden="true"><span class="seal">空</span></span>
+      <p class="hero-sub">一炷香，一盏灯，一根断了又续的棍。你自花果山醒来，带着一身未竟的旧事，重走十万八千里的西游路。</p>
+      <div class="hero-actions">
+        <a class="btn btn--gold" href="world.html">走进六回</a>
+        <a class="btn btn--ghost" href="bestiary.html">翻阅影神图</a>
+      </div>
+    </div>
+
+    <div class="hero-meta" aria-hidden="true">
+      <span>二〇二四 · 游戏科学</span>
+      <span>虚幻引擎 5 · 动作角色扮演</span>
+    </div>
+    <div class="hero-vertical" aria-hidden="true">踏平坎坷成大道</div>
+    <div class="scroll-cue" aria-hidden="true"><span>向下</span><i></i></div>
+  </section>
+
+  <!-- ================= 卷首 ================= -->
+  <section class="section intro" aria-labelledby="introTitle">
+    <div class="wrap intro-grid">
+      <div class="intro-side reveal">
+        <span class="seal" aria-hidden="true">悟</span>
+        <span class="vertical" aria-hidden="true">见众生，也见自己</span>
+      </div>
+
+      <div class="intro-body">
+        <p class="kicker reveal">Prologue · 卷首</p>
+        <h2 class="display reveal" id="introTitle" style="--d:80ms">以一根棍，<em>问一次天命</em></h2>
+        <p class="reveal" style="--d:140ms">《黑神话：悟空》从《西游记》里借来一只猴子，却没有让他直接成为斗战胜佛。故事发生在取经之后：大圣身死，六根散落，你扮演的「天命人」要沿着旧路，把散落的东西一件件找回来。</p>
+        <p class="reveal" style="--d:200ms">这一路有山、有雪、有火，也有许多不肯低头的人与妖。他们守着各自的执念，像守着一座快要塌的庙。你要做的，不只是打赢他们。</p>
+        <p class="intro-index reveal" style="--d:260ms"><span>本页</span><b>7</b><span>页 · 六回 · 一卷影神图</span></p>
+      </div>
+
+      <blockquote class="intro-quote reveal" style="--d:180ms">
+        见众生，也见自己。
+        <cite>—— 本站题记</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ================= 六回 ================= -->
+  <section class="section" aria-labelledby="chaptersTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">The Journey · 六回</p>
+          <h2 class="reveal" id="chaptersTitle" style="--d:60ms">六回山水，六种执念</h2>
+        </div>
+        <div class="section-head__aside reveal" style="--d:120ms">
+          从黑风山的余烬到花果山的飞瀑，每一回都对应一根「根器」，也对应一种放不下的东西。
+          <span class="count">06 CHAPTERS / 06 ROOTS</span>
+        </div>
+      </div>
+
+      <div class="chapter-grid">
+        <a class="chapter-card reveal" href="world.html#ch1">
+          <img src="assets/ch1.jpg" alt="黑风山：夜色中的观音禅院与山火余烬" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">壹</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第一回 · 黑风山</span>
+            <span class="cc-title">火照黑云</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+
+        <a class="chapter-card reveal" href="world.html#ch2" style="--d:70ms">
+          <img src="assets/ch2.jpg" alt="黄风岭：风沙中的落日与远山" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">贰</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第二回 · 黄风岭</span>
+            <span class="cc-title">风起黄昏</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+
+        <a class="chapter-card reveal" href="world.html#ch3" style="--d:140ms">
+          <img src="assets/ch3.jpg" alt="小西天：雪夜中的佛殿屋脊" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">叁</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第三回 · 小西天</span>
+            <span class="cc-title">夜生白露</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+
+        <a class="chapter-card reveal" href="world.html#ch4">
+          <img src="assets/ch4.jpg" alt="盘丝岭：紫雾、洞口与蛛网" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">肆</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第四回 · 盘丝岭</span>
+            <span class="cc-title">曲度紫鸳</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+
+        <a class="chapter-card reveal" href="world.html#ch5" style="--d:70ms">
+          <img src="assets/ch5.jpg" alt="火焰山：赤红山脊与升腾的火焰" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">伍</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第五回 · 火焰山</span>
+            <span class="cc-title">日落红尘</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+
+        <a class="chapter-card reveal" href="world.html#ch6" style="--d:140ms">
+          <img src="assets/ch6.jpg" alt="花果山：飞瀑、桃花与青翠崖壁" width="800" height="600" loading="lazy">
+          <span class="cc-index" aria-hidden="true">陆</span>
+          <span class="cc-body">
+            <span class="cc-kicker">第六回 · 花果山</span>
+            <span class="cc-title">未竟</span>
+            <span class="cc-more">查看回目 <i aria-hidden="true">→</i></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 影神图预览 ================= -->
+  <section class="section section--tight" aria-labelledby="loreTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">Bestiary · 影神图</p>
+          <h2 class="reveal" id="loreTitle" style="--d:60ms">一页一妖，一笔一命</h2>
+        </div>
+        <div class="section-head__aside reveal" style="--d:120ms">
+          游戏里的「影神图」替每一只妖立传：来历、别号、执念，以及一句留给后来者的提醒。
+          <a class="link-arrow" href="bestiary.html" style="margin-top:14px">查看全部 13 条 <i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+
+      <div class="lore-strip">
+        <a class="lore-card reveal" href="bestiary.html#beastGrid">
+          <span class="sigil" aria-hidden="true">鬼</span>
+          <span class="lore-info">
+            <span class="lore-chapter">第一回 · 头目</span>
+            <span class="lore-name">幽魂</span>
+            <span class="lore-line">他守着一口钟，也守着一句没人听见的忏悔。</span>
+          </span>
+        </a>
+        <a class="lore-card reveal" href="bestiary.html#beastGrid" style="--d:80ms">
+          <span class="sigil" aria-hidden="true">眉</span>
+          <span class="lore-info">
+            <span class="lore-chapter">第三回 · 妖王</span>
+            <span class="lore-name">黄眉</span>
+            <span class="lore-line">他讲经，也讲歪理；人种袋里装的是众生，还是他自己？</span>
+          </span>
+        </a>
+        <a class="lore-card reveal" href="bestiary.html#beastGrid" style="--d:160ms">
+          <span class="sigil" aria-hidden="true">郎</span>
+          <span class="lore-info">
+            <span class="lore-chapter">第六回 · 故人</span>
+            <span class="lore-name">二郎神</span>
+            <span class="lore-line">他守的是天庭的秩序，还是自己那一点不肯认输的执念。</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 数据 ================= -->
+  <section class="section section--tight" aria-label="游戏数据">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><b><span data-count="1000">1000</span><sup>万+</sup></b><span>发售三日 · 全平台销量</span></div>
+        <div class="stat"><b><span data-count="6">6</span></b><span>回目 · 从黑风山到花果山</span></div>
+        <div class="stat"><b><span data-count="27">27</span><sup>处</sup></b><span>山西古建 · 实地扫描取景</span></div>
+        <div class="stat"><b><span data-count="2">2</span><sup>项</sup></b><span>TGA 2024 · 最佳动作游戏 / 玩家之声</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 收束 ================= -->
+  <section class="cta cta--art" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <h2 class="reveal" id="ctaTitle">踏上取经路，<em>比抵达灵山更重要</em></h2>
+      <a class="btn btn--gold reveal" href="world.html" style="--d:100ms">从第一回开始</a>
+    </div>
+    <span class="cta-seal" aria-hidden="true"><span class="seal seal--lg">缘</span></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="seal" aria-hidden="true">悟</span>
+        <div>
+          <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+          <p class="footer-desc">一处关于《黑神话：悟空》的课程设计站点：六回山水、众生影神、棍法与考据。场景照片取自 Wikimedia Commons，官方剧照来自 Steam 商店页，版式与代码为本人所写。</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <a href="index.html">首页</a>
+        <a href="world.html">六回</a>
+        <a href="characters.html">众生</a>
+        <a href="combat.html">棍法</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <a href="bestiary.html">影神图</a>
+        <a href="culture.html">考据</a>
+        <a href="about.html">关于本站</a>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <p class="footer-note">本站为非官方学习作品，与游戏科学无关。游戏名称、角色与世界观版权归原权利方所有；照片版权归各摄影师，版式、代码与文字为本人原创。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 网页设计课程作业 · 黑神话：悟空</span>
+      <span>HTML · CSS · JavaScript 手写 / 无框架</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>影神图 · 黑神话：悟空</title>
+<meta name="description" content="十三则妖与人的影神图：出处、别号、小传与挑战提示，可筛选、可搜索。">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="黑神话：悟空 · 返回首页">
+    <span class="seal brand-seal" aria-hidden="true">悟</span>
+    <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="主导航">
+    <a href="index.html">首页</a>
+    <a href="world.html">六回</a>
+    <a href="characters.html">众生</a>
+    <a href="combat.html">棍法</a>
+    <a href="bestiary.html" aria-current="page">影神图</a>
+    <a href="culture.html">考据</a>
+    <a href="about.html">关于</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><i aria-hidden="true"></i></button>
+</header>
+
+<main id="main">
+
+  <section class="page-hero page-hero--beast" data-mark="怪">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">首页</a><i aria-hidden="true">/</i><span>影神图</span></nav>
+      <h1>影神图</h1>
+      <p class="lead">游戏里有一本册子，替每一只妖立传：它从哪来，叫什么别号，做过什么，最后输在哪里。这里收十三则，可按下类筛选，也可直接搜名字。</p>
+      <div class="page-hero__meta">
+        <span>收录<b>十三则</b></span>
+        <span>分类<b>妖王 / 头目 / 故人</b></span>
+        <span>每则<b>小传两段 + 挑战提示</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="beastTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">Bestiary · 影神图</p>
+          <h2 class="reveal" id="beastTitle" style="--d:60ms">妖有人相，<br>人有妖心</h2>
+        </div>
+        <div class="section-head__aside reveal" style="--d:120ms">
+          点开任意一张卡片，可以读到完整的小传与打法提示。文字为二次整理，不是游戏原文。
+          <span class="count">13 ENTRIES / 3 GROUPS</span>
+        </div>
+      </div>
+
+      <div class="beast-toolbar reveal">
+        <div class="beast-filters" id="beastFilters" role="group" aria-label="按类别筛选">
+          <button class="chip is-active" type="button" data-beast-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" type="button" data-beast-filter="妖王" aria-pressed="false">妖王</button>
+          <button class="chip" type="button" data-beast-filter="头目" aria-pressed="false">头目</button>
+          <button class="chip" type="button" data-beast-filter="故人" aria-pressed="false">故人</button>
+        </div>
+        <label class="search" for="beastSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg>
+          <input id="beastSearch" type="search" placeholder="搜名字、别号或出处" autocomplete="off">
+        </label>
+        <span class="beast-count" id="beastCount">共 13 条 · 命中 13</span>
+      </div>
+
+      <div class="beast-grid" id="beastGrid">
+
+        <button class="beast reveal" type="button"
+          data-cat="头目" data-name="幽魂" data-alias="撞钟的旧僧" data-chapter="第一回" data-glyph="鬼" data-no="01"
+          data-p1="他原是黑风山的一名僧，撞钟、扫地、添香，日子过得像钟声一样规矩。后来禅院败了，香火断了，他还守着那口钟，日复一日地撞，仿佛只要钟声不停，庙就还在。"
+          data-p2="影神图说他「执念未散」。执念是什么？是舍不得走，也是不敢走。钟声一停，他就得承认这里已经没有人了。"
+          data-tip="扑击前摇明显，向侧后方闪身，等它撞空再回身打两下；不要和它换血。">
+          <span class="sigil" aria-hidden="true">鬼</span>
+          <span class="beast-meta">第一回 · 头目</span>
+          <h3>幽魂</h3>
+          <span class="beast-bio">一口钟，一句没说完的忏悔。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:50ms"
+          data-cat="头目" data-name="广智" data-alias="会念经的狼" data-chapter="第一回" data-glyph="狼" data-no="02"
+          data-p1="广智本是黑风山的狼妖，跟着黑熊精修行，学人打坐、学人念经，也学着把獠牙藏起来。可火一起，经就念不下去了。"
+          data-p2="他死前大概想过：若不做妖，能不能做和尚？没人回答他。后来他的精魄留了下来，成了天命人手里的一团火。"
+          data-tip="扑咬后有硬直，绕背轻棍接重棍；它召火时远离地面火圈。">
+          <span class="sigil" aria-hidden="true">狼</span>
+          <span class="beast-meta">第一回 · 头目</span>
+          <h3>广智</h3>
+          <span class="beast-bio">一头会念经的狼，一身烧不尽的火。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:100ms"
+          data-cat="妖王" data-name="黑熊精" data-alias="黑风山旧主" data-chapter="第一回" data-glyph="熊" data-no="03"
+          data-p1="黑熊精原是黑风山的妖王，趁乱偷了唐僧的袈裟，又占了观音禅院。他给自己披上僧衣，学着人样供佛，却始终供不出一个「心安」。"
+          data-p2="他怕的不是天命人，是有人掀开他的袈裟，看见里面还是一头熊。所以他把庙守得那么紧，紧到连自己都进不去。"
+          data-tip="二阶段化黑风突进，听风声就翻滚；它抱树回血时优先打断。">
+          <span class="sigil" aria-hidden="true">熊</span>
+          <span class="beast-meta">第一回 · 妖王</span>
+          <h3>黑熊精</h3>
+          <span class="beast-bio">守着一座空庙，和一炉偷来的香。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:150ms"
+          data-cat="头目" data-name="虎先锋" data-alias="卧虎寺守刀人" data-chapter="第二回" data-glyph="虎" data-no="04"
+          data-p1="虎先锋是黄风大圣麾下的先锋，守卧虎寺，也使一口大刀。他讲规矩：来者先报姓名，再动手。可这年头，愿意报名字的人越来越少了。"
+          data-p2="他刀法大开大合，输赢都在明处。影神图里写他「性烈」，其实他只是不肯在暗处下手。"
+          data-tip="拖刀斩有两段，第一段后别急着贴脸；它喝血时用戳棍打断。">
+          <span class="sigil" aria-hidden="true">虎</span>
+          <span class="beast-meta">第二回 · 头目</span>
+          <h3>虎先锋</h3>
+          <span class="beast-bio">卧虎寺前，等一个能接刀的人。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button"
+          data-cat="妖王" data-name="黄风大圣" data-alias="黄风岭的鼠妖" data-chapter="第二回" data-glyph="风" data-no="05"
+          data-p1="黄风大圣本是灵山脚下得道的鼠妖，偷了灯油，练成三昧神风。他占了黄风岭，把风当成城墙，把沙当成帘子，谁也别想看清他的脸。"
+          data-p2="可他忘了，风也会停。风停的时候，岭上只剩一个不敢照镜子的影子。"
+          data-tip="三昧神风起手时躲到石柱后；它落地喘息的窗口很短，用戳棍抢一次破防就走。">
+          <span class="sigil" aria-hidden="true">风</span>
+          <span class="beast-meta">第二回 · 妖王</span>
+          <h3>黄风大圣</h3>
+          <span class="beast-bio">一口风，吹散了山，也吹散了自己。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:50ms"
+          data-cat="故人" data-name="亢金龙" data-alias="二十八宿之一" data-chapter="第三回" data-glyph="龙" data-no="06"
+          data-p1="亢金龙是天庭的星宿，奉命下界，却在小西天被黄眉的金铙困住。龙困浅滩，鳞片还亮着，脾气也还亮着。"
+          data-p2="她不是天命人的敌人，只是各为其主。影神图里那一页写得很短：金鳞岂是池中物，可池子是谁挖的，没人问。"
+          data-tip="腾空时别追，等它俯冲落点再闪；雷击范围大，贴着场地边缘走。">
+          <span class="sigil" aria-hidden="true">龙</span>
+          <span class="beast-meta">第三回 · 故人</span>
+          <h3>亢金龙</h3>
+          <span class="beast-bio">二十八宿之一，雪夜里的一条金鳞。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:100ms"
+          data-cat="妖王" data-name="黄眉" data-alias="小西天「弥勒」" data-chapter="第三回" data-glyph="眉" data-no="07"
+          data-p1="黄眉原是弥勒座下童子，偷了人种袋与金铙，跑到小西天自立门户。他建佛国，讲经法，把「极乐」说成一座人人有份的城。"
+          data-p2="可他收人用袋，困人用铙，讲的是慈悲，做的是买卖。影神图评他一句「以佛之名，行妖之事」，他若看见，大概还要笑着点头。"
+          data-tip="金铙落下前地面有光圈，立刻横移；人种袋吸人时向后闪，别按攻击键。">
+          <span class="sigil" aria-hidden="true">眉</span>
+          <span class="beast-meta">第三回 · 妖王</span>
+          <h3>黄眉</h3>
+          <span class="beast-bio">自立为佛的人，最怕别人问他凭什么。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:150ms"
+          data-cat="头目" data-name="紫蛛儿" data-alias="盘丝洞蛛精" data-chapter="第四回" data-glyph="蛛" data-no="08"
+          data-p1="紫蛛儿是盘丝洞的蜘蛛精，织得一手好网。她把网结在洞口，不是为捕猎，是为留人——留那个说会回来的人。"
+          data-p2="网越结越厚，人越等越少。她自己也快忘了，当初等的是谁。"
+          data-tip="蛛丝缠脚时连按闪身挣脱；她上墙后注意落点，别站在网中央。">
+          <span class="sigil" aria-hidden="true">蛛</span>
+          <span class="beast-meta">第四回 · 头目</span>
+          <h3>紫蛛儿</h3>
+          <span class="beast-bio">洞口结网，等一个不会再回来的人。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button"
+          data-cat="妖王" data-name="百眼魔君" data-alias="盘丝岭蜈蚣精" data-chapter="第四回" data-glyph="眼" data-no="09"
+          data-p1="百眼魔君是盘丝岭的蜈蚣精，肋下千眼，金光罩体。他原在黄花观炼药，后来占了盘丝洞，把整座岭变成一张网。"
+          data-p2="他信「看得见就能拿得住」：看得见人心，就拿得住人。可他没算到，有些人闭着眼也敢往前走。"
+          data-tip="金光阵开启时躲到石后；它抬手蓄光就绕背，破金光后输出窗口约三息。">
+          <span class="sigil" aria-hidden="true">眼</span>
+          <span class="beast-meta">第四回 · 妖王</span>
+          <h3>百眼魔君</h3>
+          <span class="beast-bio">满身金眼，照得人无处可藏。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:50ms"
+          data-cat="妖王" data-name="红孩儿" data-alias="圣婴大王" data-chapter="第五回" data-glyph="火" data-no="10"
+          data-p1="红孩儿是牛魔王与铁扇公主之子，号圣婴大王，修成三昧真火。他从小听人说「你爹不要你」，于是先把自己点着了，再去烧别人。"
+          data-p2="火是他的脾气，也是他的盔甲。影神图里他始终是个孩子模样——不是长不大，是不肯长大。"
+          data-tip="火圈收缩时向外闪，别在原地翻滚；他落地喘息时用立棍扫一圈再走。">
+          <span class="sigil" aria-hidden="true">火</span>
+          <span class="beast-meta">第五回 · 妖王</span>
+          <h3>红孩儿</h3>
+          <span class="beast-bio">一个被火养大的孩子，只会用火烧人。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:100ms"
+          data-cat="妖王" data-name="牛魔王" data-alias="平天大圣" data-chapter="第五回" data-glyph="牛" data-no="11"
+          data-p1="牛魔王曾与悟空结拜，也叫平天大圣。后来他娶了铁扇公主，生了红孩儿，守着一座火焰山，把当年的豪气一点点熬成了沉默。"
+          data-p2="他不是打不过，是不想再打了。家、山、旧兄弟，每一样都拽着他，最后他站在原地，像一座会呼吸的山。"
+          data-tip="冲锋会撞塌石柱，借石柱卡位；二阶段斧劈后摇长，绕后打三段轻棍。">
+          <span class="sigil" aria-hidden="true">牛</span>
+          <span class="beast-meta">第五回 · 妖王</span>
+          <h3>牛魔王</h3>
+          <span class="beast-bio">平天大圣，被自己的家事压弯了腰。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button" style="--d:150ms"
+          data-cat="故人" data-name="二郎神" data-alias="灌江口显圣真君" data-chapter="第六回" data-glyph="郎" data-no="12"
+          data-p1="二郎神杨戬，额生天眼，手持三尖两刃刀。当年与大圣斗法，七十二变对七十二变，谁也没真正赢过谁。"
+          data-p2="这一回他挡在天命人面前，不为天庭，也不为私怨，只为确认一件事：那只猴子走后，还有没有人敢站出来。"
+          data-tip="天眼开时别直线突进；他召法相分身时优先清分身，否则会被围。">
+          <span class="sigil" aria-hidden="true">郎</span>
+          <span class="beast-meta">第六回 · 故人</span>
+          <h3>二郎神</h3>
+          <span class="beast-bio">他守的秩序，和他不肯认输的执念，是同一件东西。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <button class="beast reveal" type="button"
+          data-cat="故人" data-name="大圣残躯" data-alias="花果山深处" data-chapter="第六回" data-glyph="圣" data-no="13"
+          data-p1="花果山深处，大圣的残躯还在。六根已散，金箍已卸，他却仍保持着向前走的姿势，像随时会睁开眼。"
+          data-p2="影神图最后一页没有写他的死因，只写了一句：「他来过。」天命人站在这里，才明白自己找的从来不是六根。"
+          data-tip="出招是大圣旧招的残影，节奏熟悉但更快；别贪刀，打完一套就退。">
+          <span class="sigil" aria-hidden="true">圣</span>
+          <span class="beast-meta">第六回 · 故人</span>
+          <h3>大圣残躯</h3>
+          <span class="beast-bio">一副残躯，一段没走完的路。</span>
+          <span class="beast-more">展开影神图</span>
+        </button>
+
+        <p class="beast-empty" id="beastEmpty" hidden><b>无</b>没有找到这一条。换个名字，或把分类切回「全部」。</p>
+      </div>
+
+      <p class="muted reveal" style="margin-top:30px;font-size:.78rem;line-height:1.9">影神图为二次整理：小传依据游戏内设定与《西游记》原文重新叙述，挑战提示来自个人体验，均非官方文本。</p>
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-labelledby="stillsTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-head__main">
+          <p class="kicker reveal">— OFFICIAL STILLS · 剧照</p>
+          <h2 class="display reveal" id="stillsTitle" style="--d:80ms">妖的真身</h2>
+        </div>
+        <div class="section-head__aside">
+          <p class="muted reveal" style="--d:160ms">官方游戏截图：狼妖、蛛妖与雪原一战。画面版权归游戏科学（Game Science）所有。</p>
+        </div>
+      </div>
+
+      <div class="stills">
+        <figure class="still reveal" style="--d:200ms">
+          <img src="assets/still-wolf.jpg" width="1600" height="900" alt="官方截图：白毛狼妖在雪夜庭院中伏身，面前是燃着的棍火">
+          <figcaption>狼妖 · 雪夜</figcaption>
+        </figure>
+        <figure class="still reveal" style="--d:260ms">
+          <img src="assets/still-spider.jpg" width="1600" height="900" alt="官方截图：巨大的白蛛伏在洞窟蛛网之间">
+          <figcaption>蛛妖 · 洞窟</figcaption>
+        </figure>
+        <figure class="still reveal" style="--d:320ms">
+          <img src="assets/still-snow.jpg" width="1600" height="900" alt="官方截图：雪原之上火焰未熄，天命人举葫芦饮酒">
+          <figcaption>雪原 · 饮酒</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <h2 class="reveal" id="ctaTitle">妖怪看尽，<em>再看这座山</em></h2>
+      <a class="btn btn--gold reveal" href="culture.html" style="--d:100ms">进入考据</a>
+    </div>
+    <span class="cta-seal" aria-hidden="true"><span class="seal seal--lg">录</span></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="seal" aria-hidden="true">悟</span>
+        <div>
+          <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+          <p class="footer-desc">一处关于《黑神话：悟空》的课程设计站点：六回山水、众生影神、棍法与考据。场景照片取自 Wikimedia Commons，官方剧照来自 Steam 商店页，版式与代码为本人所写。</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <a href="index.html">首页</a>
+        <a href="world.html">六回</a>
+        <a href="characters.html">众生</a>
+        <a href="combat.html">棍法</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <a href="bestiary.html">影神图</a>
+        <a href="culture.html">考据</a>
+        <a href="about.html">关于本站</a>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <p class="footer-note">本站为非官方学习作品，与游戏科学无关。游戏名称、角色与世界观版权归原权利方所有；照片版权归各摄影师，版式、代码与文字为本人原创。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 网页设计课程作业 · 黑神话：悟空</span>
+      <span>HTML · CSS · JavaScript 手写 / 无框架</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 影神图弹窗 -->
+<div class="modal" id="beastModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="document">
+    <button class="modal-close" type="button" data-close aria-label="关闭影神图">✕</button>
+    <div class="modal-head">
+      <span class="sigil" id="modalSigil" aria-hidden="true">妖</span>
+      <div>
+        <h2 id="modalTitle">影神图</h2>
+        <p id="modalMeta">出处 · 类别 · 别号</p>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p id="modalP1"></p>
+      <p id="modalP2"></p>
+      <div class="tip-box"><b>挑战提示</b><span id="modalTip"></span></div>
+      <p class="modal-index" id="modalIndex"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

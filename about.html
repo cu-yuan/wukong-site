@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · 黑神话：悟空</title>
+<meta name="description" content="关于本站：一份《黑神话：悟空》主题的网页设计课程作业，七页结构、技术说明与原创声明。">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="黑神话：悟空 · 返回首页">
+    <span class="seal brand-seal" aria-hidden="true">悟</span>
+    <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+  </a>
+  <nav class="nav" id="siteNav" aria-label="主导航">
+    <a href="index.html">首页</a>
+    <a href="world.html">六回</a>
+    <a href="characters.html">众生</a>
+    <a href="combat.html">棍法</a>
+    <a href="bestiary.html">影神图</a>
+    <a href="culture.html">考据</a>
+    <a href="about.html" aria-current="page">关于</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><i aria-hidden="true"></i></button>
+</header>
+
+<main id="main">
+
+  <section class="page-hero page-hero--about" data-mark="悟">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="面包屑"><a href="index.html">首页</a><i aria-hidden="true">/</i><span>关于</span></nav>
+      <h1>关于</h1>
+      <p class="lead">七页纸，一根棍，一段没走完的路。文字出自我手，图片用的都是可授权的素材；下面交代做法、清单与边界，方便你检查链接、看技术点，或者确认版权。</p>
+      <div class="page-hero__meta">
+        <span>站点<b>七页 · 静态</b></span>
+        <span>技术<b>手写 HTML / CSS / JS</b></span>
+        <span>发布<b>GitHub Pages</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="aboutTitle">
+    <div class="wrap about-grid">
+
+      <div class="about-copy">
+        <p class="kicker reveal">About · 关于本站</p>
+        <h2 class="reveal" id="aboutTitle" style="--d:60ms">一份课程作业，<br>和一个喜欢的故事</h2>
+        <p class="reveal" style="--d:120ms">这是「网页设计与制作」课程的期末作业。题目自选，我选了《黑神话：悟空》——它刚好把中国古典小说、古建、非遗与当代游戏工业放在一起，适合做成一个既能读、也能看的站点。</p>
+        <p class="reveal" style="--d:160ms">站点共七页：首页、六回、众生、棍法、影神图、考据、关于。页面之间全部使用相对路径链接，没有后端，也没有任何框架，直接放在 GitHub Pages 上就能打开。</p>
+        <p class="reveal" style="--d:200ms">做的时候尽量守住两条：一是文字自己写，二是图片说清出处。六回山水用 Wikimedia Commons 的开放授权照片，统一调成墨金二色；首页主视觉与众生、棍法、影神图三页，用的是 Steam 商店页的官方游戏截图，并在页尾标明版权。</p>
+
+        <div class="signature reveal">
+          <span class="seal" aria-hidden="true">悟</span>
+          <p>写完这一页，棍法还是没练好。<br>—— 制作者</p>
+        </div>
+      </div>
+
+      <div>
+        <dl class="info-list reveal">
+          <div class="info-row"><dt>站点主题</dt><dd>《黑神话：悟空》文化专题</dd></div>
+          <div class="info-row"><dt>制作工具</dt><dd>VS Code · 手写 HTML / CSS / JavaScript</dd></div>
+          <div class="info-row"><dt>页面数量</dt><dd>7 页（含主页 index.html）</dd></div>
+          <div class="info-row"><dt>技术要点</dt><dd>语义化标签、Flex / Grid、CSS 变量、Canvas 粒子、IntersectionObserver</dd></div>
+          <div class="info-row"><dt>图片来源</dt><dd>Wikimedia Commons 照片 8 张 + Steam 官方截图 7 张</dd></div>
+          <div class="info-row"><dt>屏幕适配</dt><dd>桌面 / 平板 / 手机，含「减少动态效果」适配</dd></div>
+          <div class="info-row"><dt>发布方式</dt><dd>GitHub Pages 静态托管</dd></div>
+        </dl>
+
+        <div class="page-list">
+          <a class="page-item" href="index.html"><b aria-hidden="true">壹</b><span>首页<i>index.html · 六回入口</i></span></a>
+          <a class="page-item" href="world.html"><b aria-hidden="true">贰</b><span>六回<i>world.html · 山水与六根</i></span></a>
+          <a class="page-item" href="characters.html"><b aria-hidden="true">叁</b><span>众生<i>characters.html · 十二位人物</i></span></a>
+          <a class="page-item" href="combat.html"><b aria-hidden="true">肆</b><span>棍法<i>combat.html · 棍势与法术</i></span></a>
+          <a class="page-item" href="bestiary.html"><b aria-hidden="true">伍</b><span>影神图<i>bestiary.html · 十三则图鉴</i></span></a>
+          <a class="page-item" href="culture.html"><b aria-hidden="true">陆</b><span>考据<i>culture.html · 古建与非遗</i></span></a>
+          <a class="page-item" href="about.html"><b aria-hidden="true">柒</b><span>关于<i>about.html · 本页</i></span></a>
+        </div>
+
+        <div class="badge-list" aria-label="技术标签">
+          <span class="badge">HTML5</span>
+          <span class="badge">CSS3</span>
+          <span class="badge">原生 JavaScript</span>
+          <span class="badge">响应式布局</span>
+          <span class="badge">无障碍</span>
+          <span class="badge">摄影调色</span>
+          <span class="badge">无框架</span>
+          <span class="badge">GitHub Pages</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-label="原创与版权声明">
+    <div class="wrap">
+      <div class="notice reveal">
+        <h3>原创与版权声明</h3>
+        <p>本站为个人课程作业，非官方网站，与游戏科学（Game Science）无隶属关系。《黑神话：悟空》的名称、角色、世界观及相关商标版权归原权利方所有。站内场景照片来自 Wikimedia Commons 的开放授权作品（作者与许可见下），为统一视觉做了去色、压暗与金色调处理；众生、棍法、影神图三页另用了 Steam 商店页的官方游戏截图，仅作课程作业的图文展示，版权归游戏科学所有。版式、代码与文字为作者原创，文字为根据公开资料与个人理解的再叙述，不复制游戏内文本。若涉及版权问题，请联系删除。</p>
+      </div>
+
+      <div class="credits reveal">
+        <h4>官方截图来源</h4>
+        <ul>
+          <li>首页 · 天命人主视觉 — Steam 商店页 library_hero</li>
+          <li>众生 · 林间对峙 / 棍法 · 棍光、金树 — Steam 商店页截图</li>
+          <li>影神图 · 狼妖 / 蛛妖 / 雪原 — Steam 商店页截图</li>
+          <li>版权：© 游戏科学（Game Science），仅用于课程展示</li>
+        </ul>
+      </div>
+
+      <div class="credits reveal">
+        <h4>场景照片来源</h4>
+        <ul>
+          <li>首页 · 黄山云海 — <a href="https://commons.wikimedia.org/wiki/File:Cloud_sea_-_huangshan.jpg">The Pocket</a>，CC BY 2.0</li>
+          <li>第一回 · 少林塔林 — <a href="https://commons.wikimedia.org/wiki/File:20241103_Pagoda_Forest_of_Shaolin_Temple_01.jpg">Windmemories</a>，CC BY-SA 4.0</li>
+          <li>第二回 · 敦煌鸣沙山 — <a href="https://commons.wikimedia.org/wiki/File:Dunhuang_(54531617402).jpg">xiquinhosilva</a>，CC BY 2.0</li>
+          <li>第三回 · 五台山普化寺 — <a href="https://commons.wikimedia.org/wiki/File:Puhua_Temple_in_Mount_Wutai,_picture1.jpg">Huangdan2060</a>，CC0</li>
+          <li>第四回 · 芦笛岩 — <a href="https://commons.wikimedia.org/wiki/File:Reed_Flute_Cave_89027-Guilin_(44934938882).jpg">xiquinhosilva</a>，CC BY 2.0</li>
+          <li>第五回 · 吐鲁番火焰山 — <a href="https://commons.wikimedia.org/wiki/File:Turpan-flaming-mountains-d02.jpg">Colegota</a>，CC BY-SA 2.5 ES</li>
+          <li>第六回 · 黄果树瀑布 — <a href="https://commons.wikimedia.org/wiki/File:Huangguoshu_Waterfall_during_night_tour_(20230403210211).jpg">N509FZ</a>，CC BY-SA 4.0</li>
+          <li>考据 · 悬空寺 — <a href="https://commons.wikimedia.org/wiki/File:Xuankongsi.jpg">Emmanuel Brunner</a>，公有领域</li>
+        </ul>
+      </div>
+      <p class="muted reveal" style="margin-top:22px;font-size:.78rem;line-height:1.9">友情提示：本页只说明「作品是怎么做的」，不提供任何游戏下载或破解内容。</p>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <h2 class="reveal" id="ctaTitle">故事从一只猴子开始，<br><em>也从一只猴子结束</em></h2>
+      <a class="btn btn--gold reveal" href="index.html" style="--d:100ms">回到首页</a>
+    </div>
+    <span class="cta-seal" aria-hidden="true"><span class="seal seal--lg">终</span></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span class="seal" aria-hidden="true">悟</span>
+        <div>
+          <span class="brand-text"><b>黑神话·悟空</b><i>Black Myth · Wukong</i></span>
+          <p class="footer-desc">一处关于《黑神话：悟空》的课程设计站点：六回山水、众生影神、棍法与考据。场景照片取自 Wikimedia Commons，官方剧照来自 Steam 商店页，版式与代码为本人所写。</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>页面</h4>
+        <a href="index.html">首页</a>
+        <a href="world.html">六回</a>
+        <a href="characters.html">众生</a>
+        <a href="combat.html">棍法</a>
+      </div>
+      <div class="footer-col">
+        <h4>更多</h4>
+        <a href="bestiary.html">影神图</a>
+        <a href="culture.html">考据</a>
+        <a href="about.html">关于本站</a>
+      </div>
+      <div class="footer-col">
+        <h4>说明</h4>
+        <p class="footer-note">本站为非官方学习作品，与游戏科学无关。游戏名称、角色与世界观版权归原权利方所有；照片版权归各摄影师，版式、代码与文字为本人原创。</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 网页设计课程作业 · 黑神话：悟空</span>
+      <span>HTML · CSS · JavaScript 手写 / 无框架</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
